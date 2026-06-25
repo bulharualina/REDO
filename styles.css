@@ -10,26 +10,9 @@ body{
   padding: 0;
 }
 
+/*SIDEBAR*/
 
-
-.logo {
-    border-bottom: 1px solid #E8EBEF;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 32px;
-    height: 12px;
- 
-}
-
-.logo img {
-  width: 100%;
-  max-width: 51px;
-  height: auto;
-  display: block;
- 
-}
-
-.header {
+.sidebar {
   border-right: 1px solid #E8EBEF;
   
   position: fixed;
@@ -48,21 +31,50 @@ body{
 
 }
 
-.nav, .nav-footer{
+.sidebar__logo {
   border-bottom: 1px solid #E8EBEF;
-  border-top: 1px solid #E8EBEF;
-  padding-left: 32px; 
-
-  list-style: none;
-
-  margin: 0;
- 
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 32px;
+  height: 12px;
 
 }
 
+.sidebar__logo img {
+  width: 100%;
+  max-width: 51px;
+  height: auto;
+  display: block;
 
+}
 
-.nav-link, .nav-footer-link {
+.sidebar__links, .sidebar__actions{
+  border-bottom: 1px solid #E8EBEF;
+    border-top: 1px solid #E8EBEF;
+    padding-left: 32px;
+    list-style: none;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.sidebar__links a sup {
+  font-family: "Rethink Sans", sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: #575757;
+
+  transition: color 0.25s ease-in-out;
+}
+
+.sidebar__links a:hover sup {
+  color: #F45F00;
+}
+
+.sidebar__link, .sidebar__action {
   font-family: "Rethink Sans", sans-serif;
   font-size: 15px;
   font-weight: 500;
@@ -73,34 +85,22 @@ body{
   transition: color 0.25s ease-in-out;
 }
 
-.nav-link{
+.sidebar__link{
 color: #000;
 
 }
 
-.nav-link:hover {
+.sidebar__link:hover {
   color: #575757;
 }
 
-.nav-links a sup {
-  font-family: "Rethink Sans", sans-serif;
-  font-size: 10px;
-  font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: -0.02em;
-  color: #575757;
 
-  transition: color 0.25s ease-in-out;
-}
-.nav-links a:hover sup {
-  color: #F45F00;
-}
 
-.nav-footer-link{
+.sidebar__action{
   color: #575757;
 }
 
-.nav-footer-link:hover {
+.sidebar__action:hover {
   color: #A3A3A3
 }
 
