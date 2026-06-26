@@ -19,6 +19,15 @@ h1,h2,h3,h4,h5,h6,p{
   margin: 0;
 }
 
+.container{
+  padding: 32px 32px 120px;
+  /*Top Right&Left Bottom*/
+  border-bottom: 1px solid #E8EBEF;
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+
 /*SIDEBAR*/
 
 .sidebar {
@@ -50,6 +59,8 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 .sidebar__logo img {
+  display: flex;
+  flex-shrink: 1;
   width: 100%;
   max-width: 51px;
   height: auto;
@@ -137,19 +148,26 @@ color: #000;
 }
 
 .guidelines{
+  display: flex;
  
+  justify-content: space-between;
+  align-items: start;
 
-      position: relative;
-        flex-shrink: 0;
-        box-sizing: border-box;
-        display: flex;
-        align-items: flex-start;
-        gap: 32px;
-      padding: 32px 32px 120px; /*Top Right&Left Bottom*/
+
+}
+
+.guidelines__heading{
+  display: flex;
+
 
 }
 
 .guidelines__title{
+
+  display: flex;
+
+  flex-shrink: 0;
+  width: 419px;
   font-size: 60px;
   font-weight: 500;
   line-height: 1.1;
@@ -158,8 +176,86 @@ color: #000;
 
 }
 
+.guidelines__content{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .guidelines__text{
+  display: flex;
+  flex-shrink: 1;
+
   font-size: 18px;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.01em;  
   color: #575757;
+}
+
+.contents{
+  display: flex;
+  
+  justify-content: start;
+  align-items: start;
+  
+}
+.contents__heading{
+  flex: 1;
+}
+
+.contents__content{
+  flex: 1;
+}
+.contents__title{
+  font-size: 30px;
+  font-weight: 500;
+  color: #000;
+
+}
+.contents__list{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contents__item{
+  color: #000;
+  font-size: 30px;
+}
+
+.contents__item span{
+  color: #575757;
+}
+
+.brand-strategy{
+  display: flex;
+}
+
+.brand-strategy__heading{
+  flex: 1;
+}
+
+.brand-strategy__content{
+  flex: 1;
+  
+}
+
+.brand-strategy__title{
+  display: flex;
+  
+    flex-shrink: 0;
+  
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    color: #000;
+}
+
+.brand-strategy__text{
+  display: flex;
+    flex-shrink: 1;
+  
+    font-size: 18px;
+    letter-spacing: -0.01em;
+    color: #575757;
 }
