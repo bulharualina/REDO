@@ -1,4 +1,6 @@
 
+/*Max-width 467*/
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -17,6 +19,8 @@ body{
 
 h1,h2,h3,h4,h5,h6,p{
   margin: 0;
+      font-size: inherit;
+        font-weight: inherit;
 }
 
 .container{
@@ -28,6 +32,19 @@ h1,h2,h3,h4,h5,h6,p{
   gap: 32px;
 }
 
+.title {
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  color: #000;
+}
+
+.text{
+  font-size: 18px;
+  letter-spacing: -0.01em;
+  color: #575757;
+}
 /*SIDEBAR*/
 
 .sidebar {
@@ -108,6 +125,8 @@ h1,h2,h3,h4,h5,h6,p{
 
 .sidebar__link{
 color: #000;
+display: flex;
+flex-direction: column;
 
 }
 
@@ -147,6 +166,7 @@ color: #000;
   display: block;
 }
 
+/*GUIDELINES*/
 .guidelines{
   display: flex;
  
@@ -191,6 +211,7 @@ color: #000;
   color: #575757;
 }
 
+/*CONTENTS*/
 .contents{
   display: flex;
   
@@ -200,10 +221,12 @@ color: #000;
 }
 .contents__heading{
   flex: 1;
+ max-width: 467px;
 }
 
 .contents__content{
   flex: 1;
+  max-width: 467px;
 }
 .contents__title{
   font-size: 30px;
@@ -226,36 +249,74 @@ color: #000;
   color: #575757;
 }
 
+/*BRAND STRATEGY*/
+
 .brand-strategy{
   display: flex;
 }
 
 .brand-strategy__heading{
   flex: 1;
+  display: flex;
+  flex-direction: row;
+  max-width: 467px;
 }
 
 .brand-strategy__content{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
   flex: 1;
+  max-width: 467px;
+ 
   
 }
 
 .brand-strategy__title{
-  display: flex;
-  
-    flex-shrink: 0;
-  
-    font-size: 60px;
-    font-weight: 500;
-    line-height: 1.1;
-    letter-spacing: -0.01em;
-    color: #000;
+  max-width: 299px;
+
+}
+.title_span {
+  color: #F45F00;
+  margin-right: 16px;
 }
 
 .brand-strategy__text{
-  display: flex;
+    display: flex;
     flex-shrink: 1;
   
-    font-size: 18px;
-    letter-spacing: -0.01em;
-    color: #575757;
+   
+  
+}
+.brand-strategy__image{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+/*PERSONALITY*/
+.personality{
+  display: flex;
+  
+}
+.personality__heading{
+ 
+    display: flex;
+   
+}
+
+.personality__heading-title{
+flex: 1;
+  display: flex;
+
+  max-width: 467px;
+}
+
+.personality__heading-text{
+  display: flex;
+  
+   
+    flex: 1;
+    max-width: 467px;
 }
