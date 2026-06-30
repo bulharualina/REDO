@@ -12,7 +12,7 @@ body{
   font-size: 15px;
   font-weight: 500;
   line-height: 1.2;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
   margin: 0;
   padding: 0;
 }
@@ -22,29 +22,44 @@ h1,h2,h3,h4,h5,h6,p{
       font-size: inherit;
         font-weight: inherit;
 }
+p{
 
-.container{
+      font-size: 18px;
+      color: #575757;
+    
+}
+h3 {
+  font-size: 22px;
+  font-weight: 600;
+
+}
+/* .container{
   padding: 32px 32px 120px;
-  /*Top Right&Left Bottom*/
+  /*Top Right&Left Bottom*//*
   border-bottom: 1px solid #E8EBEF;
   display: flex;
   flex-direction: row;
   gap: 32px;
-}
+} */
 
 .title {
   font-size: 60px;
   font-weight: 500;
   line-height: 1.1;
-  letter-spacing: -0.01em;
+
   color: #000;
 }
 
-.text{
-  font-size: 18px;
+
+
+.paragraph-bold {
+  font-size: 15px;
   letter-spacing: -0.01em;
-  color: #575757;
+  color: #000;
+  font-weight: 700;
 }
+
+
 /*SIDEBAR*/
 
 .sidebar {
@@ -172,6 +187,12 @@ flex-direction: column;
  
   justify-content: space-between;
   align-items: start;
+    padding: 32px 32px 120px;
+      /*Top Right&Left Bottom*/
+      border-bottom: 1px solid #E8EBEF;
+    
+      flex-direction: row;
+      gap: 32px;
 
 
 }
@@ -202,14 +223,7 @@ flex-direction: column;
   gap: 20px;
 }
 
-.guidelines__text{
-  display: flex;
-  flex-shrink: 1;
 
-  font-size: 18px;
-  letter-spacing: -0.01em;  
-  color: #575757;
-}
 
 /*CONTENTS*/
 .contents{
@@ -217,16 +231,22 @@ flex-direction: column;
   
   justify-content: start;
   align-items: start;
+    padding: 32px 32px 120px;
+      /*Top Right&Left Bottom*/
+      border-bottom: 1px solid #E8EBEF;
+     
+      flex-direction: row;
+      gap: 32px;
   
 }
 .contents__heading{
   flex: 1;
- max-width: 467px;
+ /* max-width: 467px; */
 }
 
 .contents__content{
   flex: 1;
-  max-width: 467px;
+  /* max-width: 467px; */
 }
 .contents__title{
   font-size: 30px;
@@ -252,14 +272,20 @@ flex-direction: column;
 /*BRAND STRATEGY*/
 
 .brand-strategy{
+  max-width: 966px;
   display: flex;
+    padding: 32px 32px 120px;
+      /*Top Right&Left Bottom*/
+      border-bottom: 1px solid #E8EBEF;
+      flex-direction: row;
+      gap: 32px;
 }
 
 .brand-strategy__heading{
   flex: 1;
   display: flex;
   flex-direction: row;
-  max-width: 467px;
+  /* max-width: 467px; */
 }
 
 .brand-strategy__content{
@@ -267,7 +293,7 @@ flex-direction: column;
   flex-direction: column;
   gap: 32px;
   flex: 1;
-  max-width: 467px;
+  /* max-width: 467px; */
  
   
 }
@@ -297,12 +323,18 @@ flex-direction: column;
 
 /*PERSONALITY*/
 .personality{
-  display: flex;
-  
+  max-width: 966px;
+    padding: 32px 32px 120px;
+      /*Top Right&Left Bottom*/
+      border-bottom: 1px solid #E8EBEF;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
 }
+
 .personality__heading{
- 
     display: flex;
+    gap: 32px;
    
 }
 
@@ -310,7 +342,7 @@ flex-direction: column;
 flex: 1;
   display: flex;
 
-  max-width: 467px;
+  /* max-width: 467px; */
 }
 
 .personality__heading-text{
@@ -318,5 +350,108 @@ flex: 1;
   
    
     flex: 1;
+    /* max-width: 467px; */
+}
+
+.personality__image{
+  width: 100%;
+ flex: 1;
+}
+
+.personality__tone-voice{
+    padding: 32px 0;
+  display: flex;
+  gap: 32px;
+
+}
+
+.tone-voice__title{
+  display: flex;
+  
+  
+    flex: 1;
+  max-width: 467px;
+}
+.tone-voice__content{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 40px;
     max-width: 467px;
+}
+.tune-voice__our{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.personality__sample-copy{
+  padding: 32px 0;
+  border-top: 1px solid #E8EBEF;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  max-width: 966px;
+}
+
+.sample-copy__content{
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  
+}
+.sample-copy__card{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.logo{
+  max-width: 966px;
+  padding: 32px 32px 120px;
+    /*Top Right&Left Bottom*/
+    border-bottom: 1px solid #E8EBEF;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.logo__heading{
+  display: flex;
+}
+
+.logo__heading  div{
+  flex: 1;
+}
+
+
+.color{
+  max-width: 966px;
+  padding: 32px 32px 120px;
+    /*Top Right&Left Bottom*/
+    border-bottom: 1px solid #E8EBEF;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+.typography{
+  max-width: 966px;
+    padding: 32px 32px 120px;
+      /*Top Right&Left Bottom*/
+      border-bottom: 1px solid #E8EBEF;
+      display: flex;
+      flex-direction: row;
+      gap: 32px;
+}
+
+.art-direction{
+  max-width: 966px;
+      padding: 32px 32px 120px;
+        /*Top Right&Left Bottom*/
+        border-bottom: 1px solid #E8EBEF;
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
 }
